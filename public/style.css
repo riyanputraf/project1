@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: center;
+}
+
+hr {
+    border: 0;
+    height: 0.5px;
+    background: #333;
+}
+
+.navbar {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: green;
+    color: #fff;
+}
+
+.nav-link {
+    display: block;
+    margin-right: 5%;
+    /* margin-left: 5%; */
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.nav-link a {
+    color: #fff;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: rgb(143, 143, 143);
+}
+
+.card-image-top {
+    height: 12rem;
+}
+
+.card-image {
+    height: 8rem;
+}
+
+.logo {
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #88d5f5;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: green;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 31px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+dl,
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #239bd8;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.containers {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    color: #239bd8;
+    padding: 2%;
+}
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-9 {
+    float: left;
+    width: 75%;
+    padding: 10px;
+    height: auto;
+}
+
+.col-4 {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: auto;
+}
+
+.col-6 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+}
+
+.col-12 {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+}
+
+.col-3 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: auto;
+}
+
+.cards {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 0.5px solid #ccc!important;
+}
+
+.card-content {
+    width: 100%;
+    padding: 1rem;
+    background: #F5CBA7;
+}
+
+.card-title {
+    color: #239bd8;
+    font-size: 1.3rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: black;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+.card-date {
+    color: grey;
+    font-size: 0.6rem;
+    font-weight: 200;
+    display: block;
+}
+
+.card-author {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.list-unstyled a {
+    color: black
+}
+
+.searchBar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* #searchQueryInput {
+    width: 100%;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: 0.1px solid;
+    border-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
+} */
+
+#searchQuerySubmit {
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#searchQuerySubmit:hover {
+    cursor: pointer;
+}
+
+.card-category li a {
+    color: black;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+/* footer {
+    background: #4dd823;
+    color: white;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+    margin: 0;
+} */
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #239bd8;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #3baae2;
+        transition: 0.3s ease;
+    }
+    .menu li+li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .dropdown li:hover {
+        background-color: #239bd8;
+    }
+}
